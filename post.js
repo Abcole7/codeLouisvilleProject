@@ -1,20 +1,26 @@
-function loadStaringPost() {
-    const Dog1 = {DogName: "Buddy", DogAge: 8, DogBreed: "Lab"};
-    const Dog2 = {DogName: "Karen", DogAge: 4, DogBreed: "Poodle"};
-    const Dog3 = {DogName: "Tom", DogAge: 3, DogBreed: "Beagle"};
+var list = document.getElementById('PostList');
 
-    var StartData = {Dog1, Dog2, Dog3};
+function newPost() {
+    var Name = document.getElementById('PetName').value;
+    var Breed = document.getElementById('PetBreed').value;
+    var Age = document.getElementById('PetAge').value;
+    var PostText = document.getElementById('PostDesc').value;
+     var Image = document.getElementById('Image').value;
+
+    var entry = document.createElement('li');
+    var entryName = document.createElement('h1');
+    var entryBreed = document.createElement('h3');
+    var entryPostText = document.createElement('p');
+    var entryImage = document.createElement('img');
+
+    entryName.appendChild(document.createTextNode(Name));
+    entryBreed.appendChild(document.createTextNode(Breed + " | " + Age));
+    entryPostText.appendChild(document.createTextNode(PostText));
+    entryImage.src = document.createTextNode(Image);
     
-   StartData.array.forEach(element => {
-    var liOne = document.createElement("li");
-    var t = document.createTextNode(element.DogName + element.DogBreed);
-    liOne.appendChild(t);
-    document.getElementById("PostList").appendChild(liOne);
-  
-   });
-   
-
+    entry.appendChild(entryName);
+    entry.appendChild(entryBreed);
+    entry.appendChild(entryPostText);
+    entry.appendChild(entryImage);
+    list.appendChild(entry);
 }
-
-
-loadStaringPost();

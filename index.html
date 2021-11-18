@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
-    <link rel="stylesheet" href="site.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="site.css">
 </head>
-   
+
 <body>
-    <div class="wrapper">
-        <section class="content">
-            <div class="columns">
-                <main class='main'> </main>
-                <aside class="sidebar-first">Left bar
-                 <ul class="navBar">            
-                     <li><a href="/codeLouisvilleProject/index.html">Home</a></li>
-                     <li><a href="/codeLouisvilleProject/post.html">Post</a></li>
-                     <li><a href="/codeLouisvilleProject/gallery.html">Gallery</a></li>
-                     </ul>
-                 </aside>
-                <aside class="sidebar-second">Right bar</aside>
-            </div>
-        </section>
-    </div>
+  <div class="wrapper">
+    <section class="content">
+      <div class="columns">
+        <main class='main'>
+          
+          <button>New Post</button>
+          <form>
+            <label>Name</label>
+            <input type="text" id="PetName"><br>
+            <label>Breed</label>
+            <input type="text" id="PetBreed"><br>
+            <label>Age</label>
+            <input type="text" id="PetAge"><br>
+            <label>Post Description</label>
+            <input type="text" id="PostDesc"><br>
+            <label>Upload an Image!</label>
+            <input type="file" id="Image"><br>
+            <input type="button" onclick="newPost()" value="Post" />
+
+          </form>
+          <ul id="PostList">
+            <li>
+              <h1>Buddy</h1><br>
+              <h3>Breed: Siberian Husky | Age: 8</h3> <br>
+              <p>Buddy decided he was not gonna be happy until we played in the snow from this morning. I cant tell if
+                he is having a good time or not. What do you think?</p><br>
+              <img src="../codeLouisvilleProject/Images/Buddy.jpg" </li>
+          </ul>
+
+
+
+        </main>
+        <aside class="sidebar-first">Left bar
+          <ul class="navBar">
+            <li><a href="/codeLouisvilleProject/index.html">Home</a></li>
+            <li><a href="/codeLouisvilleProject/post.html">Post</a></li>
+            <li><a href="/codeLouisvilleProject/gallery.html">Gallery</a></li>
+          </ul>
+        </aside>
+        <aside class="sidebar-second">Right bar</aside>
+      </div>
+    </section>
+  </div>
 </body>
-<script src="post.js"></script>
+
+
+<!-- Vue JS -->
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script> -->
+<!-- jQuery -->
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> -->
+<!--New Post JS-->
+<script src="Post.js">
+
+</script>
+
 </html>
