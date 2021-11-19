@@ -1,29 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
-    <link rel="stylesheet" href="site.css">
-</head>
-   
-   <body>
-       <div class="wrapper">
-           <section class="content">
-               <div class="columns">
-                   <main class='main'> </main>
-                   <aside class="sidebar-first">Left bar
-                    <ul class="navBar">            
-                        <li><a href="/codeLouisvilleProject/index.html">Home</a></li>
-                        <li><a href="/codeLouisvilleProject/post.html">Post</a></li>
-                        <li><a href="/codeLouisvilleProject/gallery.html">Gallery</a></li>
-                        </ul>
-                    </aside>
-                   <aside class="sidebar-second">Right bar</aside>
-               </div>
-           </section>
-       </div>
-   </body>
-   </html>
+    <title>Petter</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../codeLouisvilleProject/CSS/site.css">
+    <link rel="stylesheet" href="../codeLouisvilleProject/CSS/Gallery.css"> </head>
+
+<body>
+    <div class="container-1">
+
+        <div class="Main">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="navBar">
+                    <li><a href="../codeLouisvilleProject/index.html">Home</a></li>
+                    <li><a href="../codeLouisvilleProject/gallery.html">Gallery</a></li>
+                    <li><a href="../codeLouisvilleProject/ContactUs.html">Contact Us</a></li>
+
+                </ul>
+            </nav>
+
+
+            <div style="text-align:center">
+                <h1>Our newest friends!</h>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="../codeLouisvilleProject/Images/Buddy.jpg" class="GalleryImage"
+                        onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../codeLouisvilleProject/Images/Lucy.jpg" class="GalleryImage"
+                        onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../codeLouisvilleProject/Images/Katana.jpg" class="GalleryImage"
+                        onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../codeLouisvilleProject/Images/Zeus.jpg" class="GalleryImage"
+                        onclick="myFunction(this);">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <script src="../codeLouisvilleProject/Javascript/Gallery.js"></script>
+</body>
